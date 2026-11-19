@@ -19,6 +19,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -77,9 +78,9 @@ fun SplashScreen() {
                     )
                     Text(
                         text = "Next",
-                        brush = Brush.linearGradient(
+                        style = TextStyle(brush = Brush.linearGradient(
                             colors = listOf(Color(0xFFFF9E87), Color(0xFFD3BBFF))
-                        ),
+                        )),
                         fontSize = 42.sp,
                         fontWeight = FontWeight.ExtraBold,
                         letterSpacing = (-0.035).sp
@@ -167,9 +168,9 @@ fun GlowingEmblem() {
             Text(
                 text = "▶",
                 fontSize = 48.sp,
-                brush = Brush.linearGradient(
+                style = TextStyle(brush = Brush.linearGradient(
                     colors = listOf(Color(0xFFC084FC), Color(0xFFFF9E87))
-                )
+                ))
             )
         }
     }
